@@ -22,5 +22,5 @@ jobs:
           script: |
             cd /home/ubuntu/bussin_chess_backend
             git pull
-            docker-compose down
-            docker-compose up -d
+            sudo docker-compose down
+            sudo docker-compose up -d

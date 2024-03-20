@@ -27,7 +27,6 @@ manager = ConnectionManager()
 
 @app.websocket("/ws/{client_id}")
 async def websocket_endpoint(websocket: WebSocket, client_id: int):
-    print('123')
     await manager.connect(websocket)
     try:
         while True:

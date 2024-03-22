@@ -17,7 +17,7 @@ sys.path.append(str(Path(__file__).resolve().parents[1]))
 # access to the values within the .ini file in use.
 config = context.config
 
-from src.config import (
+from src.core.config import (
     DB_HOST,
     DB_PORT,
     DB_USER,

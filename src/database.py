@@ -10,7 +10,7 @@ from sqlalchemy.ext.asyncio import (
     create_async_engine,
 )
 from sqlalchemy.orm import DeclarativeBase
-from .config import DATABASE_URL
+from .core.config import DATABASE_URL
 
 
 class Base(DeclarativeBase):

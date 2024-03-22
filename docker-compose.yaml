@@ -10,13 +10,13 @@ services:
       - DB_NAME=${DB_NAME}
       - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
+      - RELOAD_APP=${RELOAD_APP}
     ports:
       - 8000:8000
     volumes:
       - .:/src
     networks:
       - default-network
-    restart: unless-stopped
     depends_on:
       - db
   

@@ -13,3 +13,11 @@ DATABASE_URL = (
 )
 
 SECRET_AUTH = os.environ.get("SECRET_AUTH")
+
+origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://langcards.fun",
+    "https://langcards.fun",
+    "https://blenemy.github.io/chess-app/",
+]

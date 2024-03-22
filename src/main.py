@@ -10,6 +10,7 @@ origins = [
     "http://127.0.0.1:3000",
     "http://langcards.fun",
     "https://langcards.fun",
+    "https://blenemy.github.io/chess-app/",
 ]
 
 
@@ -57,3 +58,8 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
     except WebSocketDisconnect:
         manager.disconnect(websocket)
         await manager.broadcast(f"Client #{client_id} left the chat")
+
+
+@app.get("/test")
+async def main():
+    return {"message": "success"}
